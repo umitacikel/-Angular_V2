@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My AngularJS App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="app.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-mocks.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body ng-controller="MyController">
+        <p>Test your filter, directive and factory here</p>
+        <loginform></loginform>
+    <div>
+        {{personObject | name}}
+    </div>
+    <div>
+        TitleCase: {{title}}
+    </div>
+    <div>
+        CamelCase: {{camel}}
+    </div>
+    <div>
+        DashCase: {{dash}}
+    </div>
+</body>
+</html>
